@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru" data-layout="flex">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crystal Clear Design</title>
+  <link rel="stylesheet" href="styles_1/styles_index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="home-page">
+  <div class="page-wrapper">
+
+    <header class="header" style="top: 5px !important;">
+      <div class="header__container">
+        <a href="index.html" class="logo">Crystal clear Design</a>
+        <nav class="nav">
+          <a href="portfolio.html" class="nav__link">портфолио</a>
+          <a href="workflow.html" class="nav__link">ход работы</a>
+          <a href="pricing.html" class="nav__link">цена</a>
+          <a href="contact.html" class="nav__link">оставить заявку</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__content">
+        <div class="hero-text">
+          <h1 class="hero-text__title">CRYSTAL<br>CLEAR DESIGN</h1>
+          <p class="hero-text__description">текст текст текст текст текст</p>
+          <p class="hero-text__description">текст текст текст</p>
+          <div class="hero-text__button">
+            <a href="contact.html" class="btn btn--primary">Консультация</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <svg style="position: absolute; width: 0; height: 0;">
+      <defs>
+        <filter id="frosted-glass">
+          <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" result="noise"/>
+          <feColorMatrix in="noise" type="saturate" values="0" result="desaturatedNoise"/>
+          <feComponentTransfer in="desaturatedNoise" result="texture">
+            <feFuncA type="discrete" tableValues="0 0 0 0.05 0.1 0.15"/>
+          </feComponentTransfer>
+          <feBlend in="SourceGraphic" in2="texture" mode="overlay"/>
+        </filter>
+      </defs>
+    </svg>
+
+    <section class="water-section">
+      <section class="about-section">
+        <article class="about-card">
+          <div class="about-card__image">
+            <img src="../images/photo.png" alt="Ольга Криштал">
+          </div>
+          <div class="about-card__content">
+            <h2 class="about-card__title">Я – ОЛЬГА КРИШТАЛ</h2>
+            <p class="about-card__text">Супер увлекательный текст про<br>кристально чистую<br>и понятную работу автора<br>на 4 строчки</p>
+            <div class="about-card__stats">
+              <p class="about-card__stat">ХХ заказчиков</p>
+              <p class="about-card__stat">ХХ завершенных проектов</p>
+            </div>
+            <div class="about-card__button">
+              <a href="contact.html" class="btn btn--primary">Консультация</a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </section>
+
+    <section class="bottom-section">
+      <div class="bg-blur"></div>
+      <header class="works-header">
+        <h2 class="works-header__title">Актуальные работы</h2>
+        <p class="works-header__text">супер-пупер текст про кейсы автора<br>и про их вариативность в 2 строчки</p>
+      </header>
+      <section class="works-cards">
+        <article class="works-card">
+          <img src="../images/kart1.svg" alt="Кейс 1" class="works-card__image">
+          <div class="works-card__info">
+            <h3 class="works-card__lot">Лот 1</h3>
+            <p class="works-card__desc">кристальное описание<br>кейса в 2 строчки</p>
+          </div>
+        </article>
+        <article class="works-card">
+          <img src="../images/kart2.svg" alt="Кейс 2" class="works-card__image">
+          <div class="works-card__info">
+            <h3 class="works-card__lot">Лот 2</h3>
+            <p class="works-card__desc">кристальное описание<br>кейса в 2 строчки</p>
+          </div>
+        </article>
+        <article class="works-card">
+          <img src="../images/kart3.svg" alt="Кейс 3" class="works-card__image">
+          <div class="works-card__info">
+            <h3 class="works-card__lot">Лот 1</h3>
+            <p class="works-card__desc">кристальное описание<br>кейса в 2 строчки</p>
+          </div>
+        </article>
+      </section>
+      <section class="works-cards">
+        <article class="works-card">
+          <img src="../images/kart1.svg" alt="Кейс 4" class="works-card__image">
+          <div class="works-card__info">
+            <h3 class="works-card__lot">Лот 1</h3>
+            <p class="works-card__desc">кристальное описание<br>кейса в 2 строчки</p>
+          </div>
+        </article>
+        <article class="works-card">
+          <img src="../images/kart2.svg" alt="Кейс 5" class="works-card__image">
+          <div class="works-card__info">
+            <h3 class="works-card__lot">Лот 2</h3>
+            <p class="works-card__desc">кристальное описание<br>кейса в 2 строчки</p>
+          </div>
+        </article>
+        <article class="works-card">
+          <img src="../images/kart3.svg" alt="Кейс 6" class="works-card__image">
+          <div class="works-card__info">
+            <h3 class="works-card__lot">Лот 1</h3>
+            <p class="works-card__desc">кристальное описание<br>кейса в 2 строчки</p>
+          </div>
+        </article>
+      </section>
+      <section class="process-section">
+        <h2 class="process-section__title">Узнайте о процессе<br>создания больше</h2>
+        <p class="process-section__text">Я предлагаю кейсы для любых целей<br>с подходящей ценой с понятным ходом работы</p>
+        <a href="process.html" class="btn btn--process">Этапы работы</a>
+      </section>
+      <section class="info-block">
+        <h2 class="info-block__title">Заинтересовала?</h2>
+        <p class="info-block__text">Свяжитесь со мной через социальные сети<br>или оставьте заявку и я сама напишу Вам!</p>
+        <div class="info-block__contacts">
+          <a href="https://t.me/" class="info-block__link">Telegram</a>
+          <a href="https://behance.net/" class="info-block__link">Behance</a>
+          <a href="mailto:o.krisshtal@mail.ru" class="info-block__email">Почта: o.krisshtal@mail.ru</a>
+        </div>
+        <p class="info-block__or">ИЛИ</p>
+        <a href="contact.html" class="btn btn--process">Оставить заявку</a>
+      </section>
+      <div class="info-block-gradient"></div>
+      <footer class="footer footer--bottom">
+        <div class="footer__container">
+          <a href="index.html" class="logo">Crystal clear Design</a>
+          <div class="footer__links">
+            <a href="privacy.html" class="footer__link">Политика конфиденциальности</a>
+            <span class="footer__text">Концепт от</span>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </div>
+</body>
+</html>
